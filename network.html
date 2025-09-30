@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Network - Stark X</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Stark X Logo">
+                    <span>Stark X</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="courses.html">Our Courses</a></li>
+                    <li><a href="network.html" class="active">Stark Network</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header network-header">
+        <div class="container">
+            <h1>Stark Network</h1>
+            <p>A Community of Creators and Innovators in Jordanian Universities</p>
+        </div>
+    </section>
+
+    <!-- Network Intro -->
+    <section class="section network-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Welcome to Stark Network</h2>
+                <p>Stark Network is a vibrant platform connecting talented student teams from universities across Jordan. We facilitate collaboration, knowledge sharing, and partnership opportunities to help you build amazing projects and grow your skills in AI, Game Development, and Robotics.</p>
+                <div class="network-stats">
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <h3>50+</h3>
+                        <p>Active Teams</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-university"></i>
+                        <h3>15+</h3>
+                        <p>Universities</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>100+</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord CTA -->
+    <section class="section discord-cta">
+        <div class="container">
+            <div class="discord-content">
+                <i class="fab fa-discord"></i>
+                <h2>Join Our Discord Community!</h2>
+                <p>Connect with fellow students, share ideas, collaborate on projects, and stay updated with the latest opportunities</p>
+                <a href="#" class="btn btn-discord"><i class="fab fa-discord"></i> Join Discord Server</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="section search-section">
+        <div class="container">
+            <div class="search-filter-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="teamSearch" placeholder="Search for teams or students...">
+                </div>
+                <div class="filter-options">
+                    <select id="universityFilter">
+                        <option value="all">All Universities</option>
+                        <option value="ju">University of Jordan</option>
+                        <option value="psut">Princess Sumaya University</option>
+                        <option value="just">Jordan University of Science & Technology</option>
+                        <option value="hu">Hashemite University</option>
+                        <option value="gju">German Jordanian University</option>
+                        <option value="other">Other Universities</option>
+                    </select>
+                    <select id="skillFilter">
+                        <option value="all">All Skills</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="game">Game Development</option>
+                        <option value="robotics">Robotics</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile Development</option>
+                    </select>
+                </div>
+                <a href="add-team.html" class="btn btn-primary"><i class="fas fa-plus"></i> Add Your Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Grid -->
+    <section class="section teams-section">
+        <div class="container">
+            <div class="teams-grid" id="teamsGrid">
+                <!-- Team Card 1 -->
+                <div class="team-card" data-university="ju" data-skills="ai robotics">
+                    <div class="team-header">
+                        <img src="images/universities/ju-logo.png" alt="University of Jordan" class="uni-logo">
+                        <div class="team-info">
+                            <h3>AI Innovators</h3>
+                            <p class="university">University of Jordan</p>
+                        </div>
+                    </div>
+                    <p class="team-description">We specialize in developing AI solutions and autonomous robotics systems for real-world applications.</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                    <div class="team-meta">
+                        <span><i class="fas fa-users"></i> 8 Members</span>
+                        <span><i class="fas fa-project-diagram"></i> 12 Projects</span>
+                    </div>
+                    <a href="team-profile.html?id=1" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <!-- Team Card 2 -->
+                <div class="team-card" data-university="psut" data-skills="game">
+                    <div class="team-header">
+                        <img src="images/universities/psut-logo.png" alt="Princess Sumaya University" class="uni-logo">
+                        <div class="team-info">
+                            <h3>Game Forge</h3>
+                            <p class="university">Princess Sumaya University</p>
+                        </div>
+                    </div>
+                    <p class="team-description">Creating immersive gaming experiences with Unity and Unreal Engine. Passionate about game design and storytelling.</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">3D Modeling</span>
+                    </div>
+                    <div class="team-meta">
+                        <span><i class="fas fa-users"></i> 6 Members</span>
+                        <span><i class="fas fa-project-diagram"></i> 8 Projects</span>
+                    </div>
+                    <a href="team-profile.html?id=2" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <!-- Team Card 3 -->
+                <div class="team-card" data-university="just" data-skills="robotics ai">
+                    <div class="team-header">
+                        <img src="images/universities/just-logo.png" alt="JUST" class="uni-logo">
+                        <div class="team-info">
+                            <h3>Robo Masters</h3>
+                            <p class="university">Jordan University of Science & Technology</p>
+                        </div>
+                    </div>
+                    <p class="team-description">Building intelligent robots and automation systems. Competing in international robotics competitions.</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">ROS</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Embedded Systems</span>
+                    </div>
+                    <div class="team-meta">
+                        <span><i class="fas fa-users"></i> 10 Members</span>
+                        <span><i class="fas fa-project-diagram"></i> 15 Projects</span>
+                    </div>
+                    <a href="team-profile.html?id=3" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <!-- Team Card 4 -->
+                <div class="team-card" data-university="hu" data-skills="ai game">
+                    <div class="team-header">
+                        <img src="images/universities/hu-logo.png" alt="Hashemite University" class="uni-logo">
+                        <div class="team-info">
+                            <h3>Tech Pioneers</h3>
+                            <p class="university">Hashemite University</p>
+                        </div>
+                    </div>
+                    <p class="team-description">Exploring the intersection of AI and gaming. Creating intelligent NPCs and procedural content generation.</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">AI for Games</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Game Design</span>
+                    </div>
+                    <div class="team-meta">
+                        <span><i class="fas fa-users"></i> 7 Members</span>
+                        <span><i class="fas fa-project-diagram"></i> 10 Projects</span>
+                    </div>
+                    <a href="team-profile.html?id=4" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <!-- Team Card 5 -->
+                <div class="team-card" data-university="gju" data-skills="robotics">
+                    <div class="team-header">
+                        <img src="images/universities/gju-logo.png" alt="GJU" class="uni-logo">
+                        <div class="team-info">
+                            <h3>Automation Squad</h3>
+                            <p class="university">German Jordanian University</p>
+                        </div>
+                    </div>
+                    <p class="team-description">Focused on industrial automation and IoT solutions. Building smart systems for the future.</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Automation</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Sensors</span>
+                    </div>
+                    <div class="team-meta">
+                        <span><i class="fas fa-users"></i> 5 Members</span>
+                        <span><i class="fas fa-project-diagram"></i> 7 Projects</span>
+                    </div>
+                    <a href="team-profile.html?id=5" class="btn btn-outline">View Profile</a>
+                </div>
+
+                <!-- Team Card 6 -->
+                <div class="team-card" data-university="psut" data-skills="ai">
+                    <div class="team-header">
+                        <img src="images/universities/psut-logo.png" alt="Princess Sumaya University" class="uni-logo">
+                        <div class="team-info">
+                            <h3>Deep Learning Lab</h3>
+                            <p class="university">Princess Sumaya University</p>
+                        </div>
+                    </div>
+                    <p class="team-description">Research-focused team working on cutting-edge deep learning and neural network architectures.</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                    <div class="team-meta">
+                        <span><i class="fas fa-users"></i> 9 Members</span>
+                        <span><i class="fas fa-project-diagram"></i> 14 Projects</span>
+                    </div>
+                    <a href="team-profile.html?id=6" class="btn btn-outline">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stark X</h3>
+                    <p>Intelligence Unleashed - Empowering the next generation of innovators in Jordan</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="network.html">Stark Network</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@starkx.com</li>
+                        <li><i class="fas fa-phone"></i> +962 XX XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Amman, Jordan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stark X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/network.js"></script>
+</body>
+</html>

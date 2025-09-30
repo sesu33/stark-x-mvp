@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Stark X</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Stark X Logo">
+                    <span>Stark X</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="courses.html" class="active">Our Courses</a></li>
+                    <li><a href="network.html">Stark Network</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Specialized Courses</h1>
+            <p>Enhance your skills with our expert-led training programs</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="ai">Artificial Intelligence</button>
+                <button class="filter-btn" data-filter="game">Game Development</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+            </div>
+            <div class="level-filters">
+                <button class="level-btn active" data-level="all">All Levels</button>
+                <button class="level-btn" data-level="beginner">Beginner</button>
+                <button class="level-btn" data-level="intermediate">Intermediate</button>
+                <button class="level-btn" data-level="advanced">Advanced</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section courses-section">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- AI Courses -->
+                <div class="course-card" data-category="ai" data-level="beginner">
+                    <div class="course-badge">Beginner</div>
+                    <div class="course-category">Artificial Intelligence</div>
+                    <h3>AI & Machine Learning Fundamentals</h3>
+                    <p>Start your AI journey by learning Python programming, data science basics, and fundamental machine learning algorithms. Build your first AI models and understand core concepts.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Python Programming for AI</li>
+                            <li>Data Analysis with Pandas & NumPy</li>
+                            <li>Machine Learning Algorithms</li>
+                            <li>Model Training & Evaluation</li>
+                            <li>Real-world AI Projects</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Beginners</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 12 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <div class="course-card" data-category="ai" data-level="intermediate">
+                    <div class="course-badge intermediate">Intermediate</div>
+                    <div class="course-category">Artificial Intelligence</div>
+                    <h3>Deep Learning & Neural Networks</h3>
+                    <p>Dive deep into neural networks, CNNs, RNNs, and transformers. Learn to build advanced AI models using TensorFlow and PyTorch for computer vision and NLP tasks.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Deep Neural Networks Architecture</li>
+                            <li>Convolutional Neural Networks (CNNs)</li>
+                            <li>Recurrent Neural Networks (RNNs)</li>
+                            <li>Transfer Learning & Fine-tuning</li>
+                            <li>TensorFlow & PyTorch</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Intermediate</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 14 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <div class="course-card" data-category="ai" data-level="advanced">
+                    <div class="course-badge advanced">Advanced</div>
+                    <div class="course-category">Artificial Intelligence</div>
+                    <h3>Computer Vision & Image Processing</h3>
+                    <p>Master computer vision techniques including object detection, image segmentation, facial recognition, and real-time video processing using state-of-the-art models.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Image Processing Techniques</li>
+                            <li>Object Detection (YOLO, R-CNN)</li>
+                            <li>Image Segmentation</li>
+                            <li>Facial Recognition Systems</li>
+                            <li>Real-time Video Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Advanced</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 12 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <!-- Game Development Courses -->
+                <div class="course-card" data-category="game" data-level="beginner">
+                    <div class="course-badge">Beginner</div>
+                    <div class="course-category">Game Development</div>
+                    <h3>Game Development with Unity - Beginner</h3>
+                    <p>Learn the fundamentals of game development using Unity. Create your first 2D games, understand game mechanics, and master the Unity interface and C# programming.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Unity Interface & Tools</li>
+                            <li>C# Programming for Games</li>
+                            <li>2D Game Development</li>
+                            <li>Physics & Collision Systems</li>
+                            <li>Game Design Principles</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Beginners</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 10 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <div class="course-card" data-category="game" data-level="intermediate">
+                    <div class="course-badge intermediate">Intermediate</div>
+                    <div class="course-category">Game Development</div>
+                    <h3>3D Game Development with Unity</h3>
+                    <p>Take your skills to the next level with 3D game development. Learn advanced Unity features, 3D modeling integration, lighting, and create immersive 3D gaming experiences.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>3D Game Development</li>
+                            <li>Advanced C# Programming</li>
+                            <li>3D Modeling & Animation</li>
+                            <li>Lighting & Shaders</li>
+                            <li>AI for Game Characters</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Intermediate</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 12 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <div class="course-card" data-category="game" data-level="advanced">
+                    <div class="course-badge advanced">Advanced</div>
+                    <div class="course-category">Game Development</div>
+                    <h3>Unreal Engine & AAA Game Development</h3>
+                    <p>Master Unreal Engine 5 and create AAA-quality games. Learn advanced graphics, Blueprints, C++, multiplayer systems, and industry-standard game development practices.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Unreal Engine 5 Mastery</li>
+                            <li>Blueprint Visual Scripting</li>
+                            <li>C++ for Unreal</li>
+                            <li>Multiplayer Game Development</li>
+                            <li>Advanced Graphics & VFX</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Advanced</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 16 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <!-- Robotics Courses -->
+                <div class="course-card" data-category="robotics" data-level="beginner">
+                    <div class="course-badge">Beginner</div>
+                    <div class="course-category">Robotics</div>
+                    <h3>Introduction to Robotics with Arduino</h3>
+                    <p>Start your robotics journey with Arduino. Learn electronics basics, sensors, motors, and build your first autonomous robots from scratch.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Arduino Programming</li>
+                            <li>Electronics Fundamentals</li>
+                            <li>Sensors & Actuators</li>
+                            <li>Motor Control</li>
+                            <li>Building Simple Robots</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Beginners</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 10 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <div class="course-card" data-category="robotics" data-level="intermediate">
+                    <div class="course-badge intermediate">Intermediate</div>
+                    <div class="course-category">Robotics</div>
+                    <h3>Advanced Robotics with ROS</h3>
+                    <p>Master Robot Operating System (ROS) and build sophisticated autonomous robots. Learn navigation, mapping, path planning, and robot simulation.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>ROS Framework</li>
+                            <li>Robot Navigation & Mapping</li>
+                            <li>Path Planning Algorithms</li>
+                            <li>Sensor Fusion</li>
+                            <li>Robot Simulation (Gazebo)</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Intermediate</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 14 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+
+                <div class="course-card" data-category="robotics" data-level="advanced">
+                    <div class="course-badge advanced">Advanced</div>
+                    <div class="course-category">Robotics</div>
+                    <h3>AI-Powered Robotics & Computer Vision</h3>
+                    <p>Combine AI and robotics to create intelligent autonomous systems. Learn computer vision for robots, deep learning integration, and advanced control systems.</p>
+                    <div class="course-details">
+                        <h4>What You'll Learn:</h4>
+                        <ul>
+                            <li>Computer Vision for Robotics</li>
+                            <li>Deep Learning Integration</li>
+                            <li>Object Recognition & Tracking</li>
+                            <li>Autonomous Navigation</li>
+                            <li>Advanced Control Systems</li>
+                        </ul>
+                    </div>
+                    <div class="course-info">
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>Target: Advanced</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 16 weeks</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate Included</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stark X</h3>
+                    <p>Intelligence Unleashed - Empowering the next generation of innovators in Jordan</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="network.html">Stark Network</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@starkx.com</li>
+                        <li><i class="fas fa-phone"></i> +962 XX XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Amman, Jordan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stark X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

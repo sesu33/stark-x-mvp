@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Team - Stark X</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Stark X Logo">
+                    <span>Stark X</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="courses.html">Our Courses</a></li>
+                    <li><a href="network.html" class="active">Stark Network</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Add Your Team to Stark Network</h1>
+            <p>Join our community of innovators and creators</p>
+        </div>
+    </section>
+
+    <!-- Add Team Form Section -->
+    <section class="section add-team-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>Join the Network</h2>
+                    <p>Fill out the form below to submit your team for review. Once approved, your team will be featured on the Stark Network page and you'll gain access to our exclusive Discord community.</p>
+                </div>
+
+                <form id="addTeamForm" class="team-form">
+                    <!-- Team Basic Info -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-users"></i> Team Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="teamName">Team Name *</label>
+                            <input type="text" id="teamName" name="teamName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="university">University *</label>
+                            <select id="university" name="university" required>
+                                <option value="">Select your university</option>
+                                <option value="ju">University of Jordan</option>
+                                <option value="psut">Princess Sumaya University for Technology</option>
+                                <option value="just">Jordan University of Science & Technology</option>
+                                <option value="hu">Hashemite University</option>
+                                <option value="gju">German Jordanian University</option>
+                                <option value="yarmouk">Yarmouk University</option>
+                                <option value="mutah">Mutah University</option>
+                                <option value="bau">Al-Balqa Applied University</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamSize">Number of Team Members *</label>
+                            <input type="number" id="teamSize" name="teamSize" min="1" max="50" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamDescription">Team Description *</label>
+                            <textarea id="teamDescription" name="teamDescription" rows="4" placeholder="Tell us about your team, your goals, and what makes you unique..." required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Skills and Expertise -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-cogs"></i> Skills & Expertise</h3>
+                        
+                        <div class="form-group">
+                            <label>Primary Field *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="field" value="ai">
+                                    <span>Artificial Intelligence</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="field" value="game">
+                                    <span>Game Development</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="field" value="robotics">
+                                    <span>Robotics</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="field" value="web">
+                                    <span>Web Development</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="field" value="mobile">
+                                    <span>Mobile Development</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="field" value="iot">
+                                    <span>IoT & Embedded Systems</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">Specific Skills & Technologies *</label>
+                            <input type="text" id="skills" name="skills" placeholder="e.g., Python, TensorFlow, Unity, ROS, Arduino..." required>
+                            <small>Separate multiple skills with commas</small>
+                        </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-project-diagram"></i> Projects & Achievements</h3>
+                        
+                        <div class="form-group">
+                            <label for="projects">Previous Projects</label>
+                            <textarea id="projects" name="projects" rows="4" placeholder="Describe your team's previous projects and achievements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectLinks">Project Links (GitHub, Portfolio, etc.)</label>
+                            <input type="text" id="projectLinks" name="projectLinks" placeholder="https://github.com/yourteam">
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="contactName">Contact Person Name *</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Contact Email *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Contact Phone Number *</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamEmail">Team Email (if different)</label>
+                            <input type="email" id="teamEmail" name="teamEmail">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn Profile/Page</label>
+                            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-info-circle"></i> Additional Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="lookingFor">What are you looking for in the network?</label>
+                            <textarea id="lookingFor" name="lookingFor" rows="3" placeholder="e.g., Collaboration opportunities, finding team members, learning from others..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span>I agree that the information provided is accurate and I accept the terms of joining Stark Network *</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Submit Application</button>
+                        <a href="network.html" class="btn btn-outline">Cancel</a>
+                    </div>
+                </form>
+
+                <div class="form-note">
+                    <p><strong>Note:</strong> Your application will be reviewed by our team. Once approved, you'll receive an email with further instructions and an invitation to our Discord server.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stark X</h3>
+                    <p>Intelligence Unleashed - Empowering the next generation of innovators in Jordan</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="network.html">Stark Network</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@starkx.com</li>
+                        <li><i class="fas fa-phone"></i> +962 XX XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Amman, Jordan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stark X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/add-team.js"></script>
+</body>
+</html>
